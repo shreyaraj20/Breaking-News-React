@@ -1,14 +1,16 @@
 import React from "react";
 import "./Post.css";
 
-const Post = () => {
+const Post = ({ post: { title, img, body, author }, i }) => {
   return (
     <div className="post-container">
-      <h1 className="heading">Title</h1>
-      <img className="image" src="" alt="post*" />
-      <p>Body</p>
-      <h5>Number</h5>
-      <h4>Author</h4>
+      <h3 className="heading">{title}</h3>
+      <img className="image" src={img} alt="post*" />
+      <p>{body}</p>
+      <div className="info">
+        <h5>Article Number: {i + 1}</h5>
+        <h4>{author}</h4>
+      </div>
     </div>
   );
 };

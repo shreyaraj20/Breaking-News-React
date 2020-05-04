@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles.css";
-import Post from "./components/post/Post";
 import Posts from "./components/posts/Posts";
 
 export default function App() {
