@@ -5,7 +5,15 @@ body {
 
 .posts-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+}
+@media screen and(max-width:500px) {
+  .posts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

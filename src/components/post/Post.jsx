@@ -3,11 +3,13 @@ import "./Post.css";
 
 const Post = ({ post: { title, img, body, author }, i }) => {
   return (
-    <div className="post-container">
+    <div className="post-container container-fluid">
       <h3 className="heading">{title}</h3>
-      <img className="image" src={img} alt="post*" />
-      <p>{body}</p>
-      <div className="info">
+      <div className="row">
+        <img className="image col-sm-4 col-lg-4" src={img} alt="post*" />
+        <p className="col-sm-8 col-lg-8 content">{body}</p>
+      </div>
+      <div className="info ">
         <h5>Article Number: {i + 1}</h5>
         <h4>{author}</h4>
       </div>
